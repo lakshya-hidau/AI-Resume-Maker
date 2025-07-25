@@ -1,0 +1,74 @@
+@@ .. @@
+ <!DOCTYPE html>
+ <html lang="en" data-theme="night">
+   <head>
+     <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    
++    <!-- SEO Meta Tags -->
++    <meta name="description" content="Create professional resumes with AI in minutes. Get hired faster with ATS-optimized templates and expert guidance. Join 50,000+ successful job seekers." />
++    <meta name="keywords" content="AI resume maker, professional resume, resume builder, ATS resume, job application, career tools, resume templates" />
++    <meta name="author" content="AI Resume Maker" />
++    
++    <!-- Open Graph Meta Tags -->
++    <meta property="og:title" content="AI Resume Maker - Create Professional Resumes with AI" />
++    <meta property="og:description" content="Build professional resumes in minutes with our AI-powered resume maker. Get hired faster with ATS-optimized templates." />
++    <meta property="og:type" content="website" />
++    <meta property="og:url" content="https://airesume.com" />
++    <meta property="og:image" content="/og-image.jpg" />
++    
++    <!-- Twitter Card Meta Tags -->
++    <meta name="twitter:card" content="summary_large_image" />
++    <meta name="twitter:title" content="AI Resume Maker - Create Professional Resumes with AI" />
++    <meta name="twitter:description" content="Build professional resumes in minutes with our AI-powered resume maker." />
++    <meta name="twitter:image" content="/og-image.jpg" />
++    
++    <!-- Favicon -->
+     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
++    
++    <!-- Theme Color -->
++    <meta name="theme-color" content="#3B82F6" />
++    
++    <!-- Preconnect to external domains -->
++    <link rel="preconnect" href="https://images.pexels.com" />
++    <link rel="preconnect" href="https://fonts.googleapis.com" />
++    
+     <title>AI Resume Maker</title>
++    
++    <!-- Structured Data -->
++    <script type="application/ld+json">
++    {
++      "@context": "https://schema.org",
++      "@type": "WebApplication",
++      "name": "AI Resume Maker",
++      "description": "Create professional resumes with AI technology",
++      "url": "https://airesume.com",
++      "applicationCategory": "BusinessApplication",
++      "operatingSystem": "Web Browser",
++      "offers": {
++        "@type": "Offer",
++        "price": "0",
++        "priceCurrency": "USD"
++      },
++      "aggregateRating": {
++        "@type": "AggregateRating",
++        "ratingValue": "4.9",
++        "ratingCount": "1250"
++      }
++    }
++    </script>
+   </head>
+   <body>
+     <div id="root"></div>
+     <script type="module" src="/src/main.jsx"></script>
++    
++    <!-- Theme initialization script -->
++    <script>
++      // Initialize theme from localStorage or default to 'night'
++      const savedTheme = localStorage.getItem('theme') || 'night';
++      document.documentElement.setAttribute('data-theme', savedTheme);
++    </script>
+   </body>
+ </html>
